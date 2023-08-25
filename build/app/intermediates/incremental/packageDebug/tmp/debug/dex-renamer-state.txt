@@ -1,4 +1,0 @@
-#Fri Aug 04 12:00:18 IST 2023
-base.0=/Users/akashsingh/Documents/backup/flutter_projects/rick_and_morty/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
