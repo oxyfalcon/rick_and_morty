@@ -44,6 +44,7 @@ class DisplayCharacter extends ConsumerWidget {
             loading: () => const SliverToBoxAdapter(
                   child: Center(child: CircularProgressIndicator()),
                 )),
+        // ignore: prefer_const_constructors
         OnGoingWidget()
       ],
     );

@@ -46,6 +46,7 @@ class DisplayLocation extends ConsumerWidget {
             loading: () => const SliverToBoxAdapter(
                   child: Center(child: CircularProgressIndicator()),
                 )),
+        // ignore: prefer_const_constructors
         OnGoingWidget()
       ],
     );
@@ -59,7 +60,6 @@ class CurrentLocationWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("CurrentLocationWidget build");
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         childCount: listLocation.length,
@@ -74,7 +74,6 @@ class CurrentLocationWidget extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Consumer(builder: (context, ref, value) {
-                      print("rebuilding");
                       var results = ref.watch(allCharacterFromLocationProvider);
                       return ExpansionTile(
                         title: Text(listLocation[indexLocation].name),
